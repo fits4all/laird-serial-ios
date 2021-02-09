@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutViewController">
+            <connections>
+                <outlet property="imageviewAbout" destination="ieI-nP-Iv1" id="Ayq-jQ-miL"/>
+                <outlet property="view" destination="9mq-tM-Mki" id="R2X-oo-qCx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="9mq-tM-Mki">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XHS-XC-p9z">
+                    <rect key="frame" x="-20" y="0.0" width="340" height="78"/>
+                    <color key="backgroundColor" red="0.0" green="0.67058825489999996" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="78" id="7PO-Rm-oab"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Laird_About.png" translatesAutoresizingMaskIntoConstraints="NO" id="SyW-XQ-KVv">
+                    <rect key="frame" x="-2" y="74" width="325" height="508"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Chip-hires-iOS-app2_57x57.png" translatesAutoresizingMaskIntoConstraints="NO" id="ieI-nP-Iv1">
+                    <rect key="frame" x="30" y="24" width="57" height="51"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIF-4b-bR8">
+                    <rect key="frame" x="-8" y="36" width="166" height="30"/>
+                    <state key="normal" title="&lt;                About">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="aboutButtonPressed:" destination="-1" eventType="touchUpInside" id="HF3-UE-Ug0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SyW-XQ-KVv" firstAttribute="leading" secondItem="9mq-tM-Mki" secondAttribute="leading" constant="-2" id="CJU-xN-IAy"/>
+                <constraint firstItem="XHS-XC-p9z" firstAttribute="leading" secondItem="9mq-tM-Mki" secondAttribute="leading" constant="-20" id="IEw-Za-HzD"/>
+                <constraint firstAttribute="bottom" secondItem="SyW-XQ-KVv" secondAttribute="bottom" constant="-14" id="M4Z-9z-AEa"/>
+                <constraint firstItem="SyW-XQ-KVv" firstAttribute="top" secondItem="9mq-tM-Mki" secondAttribute="top" constant="74" id="QQb-pf-aqa"/>
+                <constraint firstAttribute="trailing" secondItem="SyW-XQ-KVv" secondAttribute="trailing" constant="-3" id="Xys-ye-6IJ"/>
+                <constraint firstItem="XHS-XC-p9z" firstAttribute="top" secondItem="9mq-tM-Mki" secondAttribute="top" id="cnU-Tc-Soa"/>
+                <constraint firstAttribute="trailing" secondItem="XHS-XC-p9z" secondAttribute="trailing" id="kV6-Na-v7G"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Chip-hires-iOS-app2_57x57.png" width="57" height="57"/>
+        <image name="Laird_About.png" width="538" height="745"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
